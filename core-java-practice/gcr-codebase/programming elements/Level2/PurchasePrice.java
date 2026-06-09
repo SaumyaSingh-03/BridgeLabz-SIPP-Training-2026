@@ -1,0 +1,16 @@
+package programmingelements;
+import java.util.*;
+public class PurchasePrice {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        double unitPrice = input.nextDouble();
+        int quantity = input.nextInt();
+
+        double totalPrice =
+                unitPrice * quantity;
+
+        System.out.println("The total purchase price is INR "
+                + totalPrice);
+    }
+}
