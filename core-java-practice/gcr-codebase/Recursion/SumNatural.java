@@ -2,16 +2,14 @@ package Recursion;
 
 import java.util.Scanner;
 
-public class FibonacciNumber {
+public class SumNatural {
 
-    static int fibonacci(int n) {
-        if (n == 0)
-            return 0;
-
-        if (n == 1)
+    static int sum(int n) {
+        if (n == 1) {
             return 1;
+        }
 
-        return fibonacci(n - 1) + fibonacci(n - 2);
+        return n + sum(n - 1);
     }
 
     public static void main(String[] args) {
@@ -20,6 +18,6 @@ public class FibonacciNumber {
         System.out.print("Enter N: ");
         int n = sc.nextInt();
 
-        System.out.println("Fibonacci = " + fibonacci(n));
+        System.out.println("Sum = " + sum(n));
     }
 }
